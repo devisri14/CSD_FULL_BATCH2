@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		New Rx upload
+	</title>
+	<style type="text/css">
+		header{
+			    margin-left: 34%;
+    			padding-bottom: 37px;
+		}
+		#result {
+
+			    margin-left: 50%;
+			    margin-top: 5%;
+    			padding-bottom: 37px;
+		}
+	
+		.inputfields {
+			    margin-left: 37%;
+			    padding-bottom: 16px;
+			    width: 35%;
+		}
+		.inputfields label {
+			    padding-right: 13%;
+		}
+		.inputfields input {
+			    float:right;
+		}
+		.inputfields button {
+			    float:right;
+		}
+	</style>
+</head>
+<body>
+<header>
+	<h1>Enter the details to upload new Rx
+</header>
+<main>
+	<div>
+		<div class="inputfields">
+			<label for="pname">Patient Name : </label>
+			<input type="text" id="pname" name="pname"></input>	
+		</div>
+		<div class="inputfields">
+			<label for="dname">Doctor Name : </label>
+			<input type="text" id="dname" name="dname"></input>
+		</div>
+		<div class="inputfields">
+			<label for="vdata">Visit Date : </label>
+			<input type="text" id="vdate" name="vdata"></input>	
+		</div>
+		<div class="inputfields">
+			<label for="vtime">Visit Time : </label>
+			<input type="text" id="vtime" name="vtime"></input>	
+		</div>
+		<div class="inputfields">
+			<label for="reason">Reason : </label>		
+			<input type="text" id="reason" name="reason"></input>	
+		</div>
+		<div class="inputfields">
+			<label for = "filename"> Choose File to upload :</label>
+			<input type="text" name="filename" id="filename"></input>
+			<button type="button" id="upload" value="upload" name="attachment" style="margin-left:70%" onclick="upload();">Upload </button><br>	
+		</div>
+		<div class="inputfields">
+			<button type="cancel " id="reset" value="Reset"  >Reset </button>	
+			<button type="submit" id="submit" value="Submit"  >Submit </button>
+		</div>
+	</div>
+	<div id="result" style="display:none;"> 
+		<p> </p>
+	</div>
+</main>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+
+<script  type="text/javascript" src="/js/actions.js"></script>
+
+</body>
+</html>
